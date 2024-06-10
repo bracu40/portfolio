@@ -1,8 +1,10 @@
 <?php
   $to = "pawarp@umich.edu"; // this is your Email address
   $from = $_POST['email']; // this is the sender's Email address
-  $first_name = $_POST['first_name'];
-  $last_name = $_POST['last_name'];
+  $fullname = $_POST['fullname'];
+  $names = explode(' ', $fullname);
+  $first_name = $names[0];
+  $last_name = $names[1];
   $subject = "Website Contact";
   $subject2 = "Copy of your form submission";
   $message = $first_name . " " . $last_name . " wrote the following:" . "\n\n" . $_POST['message'];
