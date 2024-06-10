@@ -1255,16 +1255,13 @@
 
           <form method="post"  action="https://forms.un-static.com/forms/de96d7d392736bd1dc06ff65827abf38e93e66cc">
             <div class="input-wrapper">
-              <input type="text" name="fullname" class="form-input" placeholder="Full name" required data-form-input>
-
-              <input type="email" name="email" class="form-input" placeholder="Email address" required data-form-input>
+              <input type="text" name="name" placeholder="Full Name" type="text" required="required" class="form-control">
+              <input id="email" name="email" placeholder="Your e-mail address" type="text" required="required" class="form-control">
             </div>
-
-            <textarea name="message" class="form-input" placeholder="Your Message" required data-form-input></textarea>
-            
-            <button class="form-btn" type="submit" disabled data-form-btn>
+            <textarea class ="form-input" id="message" name="message" placeholder="Your Message" cols="40" rows="10" required="required"></textarea>
+            <button name="submit" type="submit" class="form-btn" disable data-form-btn>
               <ion-icon name="paper-plane"></ion-icon>
-              <span>Send Message</span>
+              <span>Send Message </span>
             </button>
           </form>
 
