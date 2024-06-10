@@ -2,23 +2,23 @@ vCard - Personal Portfolio
 
 # sidebar
 
-alt = Richard hanrick
-Richard hanrick
-Web developer
+alt = Prabhleen Pawar
+Prabhleen Pawar
+Software Engineer
 
 Show Contacts
 
 Email
-richard@example.com
+pawarp@umich.edu
 
 Phone
-+1 (213) 352-2795
++1 (517) 930-5369
 
 Birthday
-June 23, 1982
+February 21, 2005
 
 Location
-Sacramento, California, USA
+Ann Arbor, Michigan, USA
 
 # navbar
 
@@ -32,9 +32,9 @@ Contact
 
 About me
 
-I'm Creative Director and UI/UX Designer from Sydney, Australia, working in web development and print media. I enjoy turning complex problems into simple, beautiful and intuitive designs.
+I'm a Software Engineer based in Ann Arbor and I am a junior at the University of Michigan.
 
-My job is to build your website so that it is functional and user-friendly but at the same time attractive. Moreover, I add personal touch to your product and make sure that is eye-catching and easy to use. My aim is to bring across your message and identity in the most creative way. I created web design for many famous brand companies.
+My hope working in the industry is to use my knowledge for a good impact on the human kind by creating solutions that make our lives easier and safer. 
 
 
 ## service
@@ -42,7 +42,7 @@ My job is to build your website so that it is functional and user-friendly but a
 What i'm doing
 
 alt = design icon
-Web design
+Software Design
 The most modern and high-quality design made at a professional level.
 
 alt = Web development icon
