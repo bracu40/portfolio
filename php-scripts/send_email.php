@@ -1,35 +1,28 @@
 <?php
-if ($_SERVER['REQUEST_METHOD'] == 'POST' && $_POST['action'] == 'send_email') {
-  $errors = array();
+  // Set the recipient email address
+  $to = 'pawarp@umich.edu';
 
-  if (empty($_POST['fullname'])) {
-    $errors[] = 'Full name is empty';
-  }
+  // Set the subject line
+  $subject = 'Website Contact';
 
-  if (empty($_POST['email'])) {
-    $errors[] = 'Email is empty';
-  }
+  // Get the form data
+  $fullname = $_POST['fullname'];
+  $email = $_POST['email'];
+  $message = $_POST['message'];
 
-  if (empty($_POST['message'])) {
-    $errors[] = 'Message is empty';
-  }
+  // Create the email message
+  $message_body = "Full Name: $fullname\n";
+  $message_body.= "Email: $email\n";
+  $message_body.= "Message: $message";
 
-  if (!empty($errors)) {
-    $allErrors = join('<br/>', $errors);
-    $errorMessage = "<p style='color: red;'>{$allErrors}</p>";
-  } else {
-    $name = $_POST['fullname'];
-    $senderEmail = $_POST['email'];
-    $message = $_POST['message'];
+  // Set the headers
+  $headers = "From: $email\r\n";
+  $headers.= "Reply-To: $email\r\n";
 
-    $to = 'pawarp@umich.edu';
-    $subject = 'Website Contact';
-    $email_message = "Name: $name\nEmail: $senderEmail\nMessage: $message";
+  // Send the email
+  mail($to, $subject, $message_body, $headers);
 
-    $headers = "From: $senderEmail\r\n";
-    mail($to, $subject, $email_message, $headers);
-
-    echo "Email sent successfully!";
-  }
-}
+  // Redirect to a thank you page or display a success message
+  header('Location: thank_you.html');
+  exit;
 ?>
