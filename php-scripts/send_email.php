@@ -23,6 +23,5 @@
   mail($to, $subject, $message_body, $headers);
 
   // Redirect to a thank you page or display a success message
-  header('Location: thank_you.html');
   exit;
 ?>
